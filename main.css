@@ -1,0 +1,188 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 32px;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    margin: 0;
+    background-color:hsl(0, 0%, 94%);
+    display: flex;
+    justify-content: center;
+}
+
+.container{
+    width: 11rem;
+    height: 16rem;
+    margin-top: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 10px 10px 3.5rem 10px;
+}
+
+form{
+    display: flex;
+    flex-direction: row;
+    height: 5rem;
+    border-bottom: 1px solid hsl(0, 0%, 86%);
+    position: relative;
+}
+
+.form-item{
+    width: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.5rem;
+    margin-right: 0.5rem;
+    
+}
+
+.form-item:last-of-type{
+    margin-right: 0;
+}
+
+label{
+    color: hsl(0, 1%, 44%);
+    margin-bottom: 10px;
+}
+
+input{
+    width: 2.8rem;
+    height: 2rem;
+    padding: 0.5rem;
+    font-size: 0.55rem;
+    color: hsl(0, 0%, 8%);
+    font-weight: 800;
+}
+
+input::placeholder{
+    color: hsl(0, 1%, 44%)
+}
+
+.hide{
+    display:none;
+}
+
+.error{
+    color: hsl(0, 100%, 67%);
+}
+
+.error-message{
+    color:hsl(0, 100%, 67%);
+    font-style: italic;
+    font-size: 0.40rem;
+    line-height: 14px;
+    margin-top: 4px;
+}
+
+.error label, .error input, .error input::placeholder{
+    color:hsl(0, 100%, 67%);
+}
+
+.error input{
+    border: 1px solid hsl(0, 100%, 67%);
+}
+
+button{
+    position: absolute;
+    width: 2.25rem;
+    height: 2.25rem;
+    bottom: -1rem;
+    left: 38%;
+    border-radius: 50%;
+    background-color: hsl(259, 100%, 65%);
+    border: none;
+}
+
+img{
+    height: 1rem;
+    width: 1rem;
+}
+
+span{
+    color: hsl(259, 100%, 65%);
+    margin-right: 0.25rem;
+}
+
+.answer{
+    font-size: 1.5rem;
+    font-weight: 800;
+    font-style: italic;
+    margin: 0;
+}
+
+.answer:first-of-type{
+    margin-top: 2rem;
+}
+
+@media screen and (min-width: 1440px) {
+    body{
+        align-items: center;
+    }
+    .container{
+        width: 26rem;
+        height: 20rem;
+        align-items: flex-start;
+        border-radius: 20px 20px 6rem 20px;
+
+    }
+    form{
+        width: 85%;
+        height: 4.15rem;
+        margin-left: 2rem;
+    }
+
+    .form-item{
+        width: 3rem;
+        margin-left: 2rem;
+    }
+
+    .form-item:first-of-type{
+        margin-left: 0;
+    }
+
+    label{
+        font-size: 0.5rem;
+    }
+
+    input{
+        width: 5rem;
+        /* height: 3rem; */
+        border-radius: 10px;
+        outline: none;
+        font-size: 0.8rem;
+        border: 1px solid hsl(0, 0%, 86%);
+    }
+    button{
+        width: 3rem;
+        height: 3rem;
+        right: 0;
+        left: auto;
+        bottom: -1.5rem;
+    }
+
+    img{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+    
+    .answer-container{
+        margin-left: 2rem;
+    }
+    
+    .answer{
+        font-size: 3rem;
+        height: 4rem;
+    }
+
+    .answer:first-of-type{
+        margin-top: 0.5rem;
+    }
+}
