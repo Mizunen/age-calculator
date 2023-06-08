@@ -60,11 +60,11 @@ function showAge(){
      } 
     
 
-    let dayInterval = setInterval(animate, (2000 / 1997), dayAnswerTag, dayAnswer);
+    let dayInterval = setInterval(animate, (2000 / 97), dayAnswerTag, dayAnswer);
     
-    let monthInterval = setInterval(animate, (2000 / 1997), monthAnswerTag, monthAnswer);
+    let monthInterval = setInterval(animate, (2000 / 97), monthAnswerTag, monthAnswer);
 
-    let yearInterval = setInterval(animate, (2000 / 1997), yearAnswerTag, yearAnswer);
+    let yearInterval = setInterval(animate, (2000 / 97), yearAnswerTag, yearAnswer);
 
     function animate(tag, endNum){
     let currentNumber = 0;
